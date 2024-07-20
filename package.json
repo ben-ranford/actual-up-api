@@ -1,0 +1,20 @@
+{
+  "name": "actual-up-api",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@actual-app/api": "^6.8.2",
+    "@actual-app/crdt": "^2.1.0",
+    "axios": "^1.7.2",
+    "better-sqlite3": "^11.1.2",
+    "csv-parser": "^3.0.0",
+    "csv-stringify": "^6.5.0",
+    "tsx": "^4.16.2"
+  }
+}
