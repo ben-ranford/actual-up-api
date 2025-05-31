@@ -3,7 +3,7 @@
     "password": "myPassword",
     "accountName": "myAccount",
     "apiKey": "myApiKey",
-    "csvFileLocation": "./txdata.csv",
+    "csvFilePath": "./txdata.csv",
     "overwrite": false,
     "budgetId": "budget ID goes here",
     "EE2E": false,
