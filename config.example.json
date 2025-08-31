@@ -1,11 +1,10 @@
 {
-    "serverURL": "https://actual.example.com",
-    "password": "myPassword",
-    "accountName": "myAccount",
-    "apiKey": "myApiKey",
-    "csvFileLocation": "./txdata.csv",
-    "overwrite": false,
-    "budgetId": "budget ID goes here",
-    "EE2E": false,
-    "encryptionPassword": "password"
+  "serverURL": "https://actual.example.com",
+  "password": "myPassword",
+  "accountName": "myAccount",
+  "apiKey": "myApiKey",
+  "csvFilePath": "./txdata.csv",
+  "budgetId": "your-budget-id",
+  "EE2E": false,
+  "encryptionPassword": "password"
 }
