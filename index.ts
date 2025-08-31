@@ -142,7 +142,10 @@ async function parseCSV(filePath: string): Promise<Transaction[]> {
                 const transaction: Transaction = {
                     id: data.id,
                     date: data.createdAt ? data.createdAt.split('T')[0] : '',
-                    amount: parseInt(data.amount) * 100,
+                    // Convert decimal string amount to integer cents with rounding
+                    amount: Number.isFinite(Number(data.amount))
+                        ? Math.round(parseFloat(data.amount) * 100)
+                        : 0,
                     payee_name: data.description,
                     imported_payee: data.rawText || data.description,
                     notes: data.message || '',
